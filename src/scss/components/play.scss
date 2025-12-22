@@ -1,0 +1,153 @@
+.play-section {
+  background: linear-gradient(180deg, #57a5fc 11.29%, #0050a9 100%);
+
+  @include media(desktop) {
+  }
+}
+
+.play-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 413px;
+  background-image: url(../img/play/play-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../img/play/play-bg-desk.png);
+    background-position: bottom left;
+    max-width: 1440px;
+  }
+}
+
+.play-container {
+  @include media(desktop) {
+  }
+}
+
+.play-title {
+  text-align: center;
+
+  @include media(desktop) {
+  }
+}
+
+.play-text {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.33333;
+    max-width: 827px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.play-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: column;
+    align-items: end;
+    gap: 40px;
+  }
+}
+
+.play-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:nth-child(1) {
+    .play-img {
+      min-width: 65px;
+    }
+  }
+
+  &:nth-child(2) {
+    .play-img {
+      min-width: 78px;
+    }
+  }
+
+  &:nth-child(3) {
+    .play-img {
+      min-width: 56px;
+    }
+  }
+
+  &:nth-child(4) {
+    .play-img {
+      min-width: 76px;
+    }
+  }
+
+  @include media(desktop) {
+    &:nth-child(1) {
+      transform: translateX(-64px);
+      max-width: 333px;
+
+      .play-img {
+        min-width: 91px;
+      }
+    }
+
+    &:nth-child(2) {
+      transform: translateX(-189px);
+      max-width: 407px;
+
+      .play-img {
+        min-width: 111px;
+      }
+    }
+
+    &:nth-child(3) {
+      transform: translateX(-82px);
+      max-width: 348px;
+
+      .play-img {
+        min-width: 80px;
+      }
+    }
+
+    &:nth-child(4) {
+      transform: translateX(-290px);
+      max-width: 376px;
+
+      .play-img {
+        min-width: 108px;
+      }
+    }
+  }
+}
+
+.play-item-text {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.55556;
+  }
+}

@@ -13,12 +13,13 @@ gallerySwiper = new Swiper('.gallery-swiper-container', {
   centeredSlides: false,
   slidesPerView: 1,
   slidesPerGroup: 1,
-  initialSlide: 2,
+  initialSlide: 0,
   spaceBetween: 24,
   speed: 500,
   allowTouchMove: true,
   breakpoints: {
     1440: {
+      initialSlide: 1,
       spaceBetween: 36,
     },
   },
