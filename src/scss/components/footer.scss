@@ -1,34 +1,44 @@
 .footer {
-  background: #111317;
-  border-top: 1px solid #393e46;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  background: #001b38;
 
   @include media(desktop) {
+  }
+}
+
+.footer-bg-wrapper {
+  padding-top: 42px;
+  padding-bottom: 80px;
+  background-image: url(../img/footer/footer-small-flower-mob.png),
+    url(../img/footer/footer-big-flower-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom 14px center;
+  background-size: auto, auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(../img/footer/footer-small-flower-desk.png),
+      url(../img/footer/footer-big-flower-desk.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center left 118px, bottom 8px right 50px;
+    max-width: 1440px;
   }
 }
 
 .footer-wrapper {
   @include media(desktop) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-  }
-}
-
-.footer-title-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-
-  @include media(desktop) {
-    margin-bottom: 0;
+    gap: 120px;
   }
 }
 
 .footer-nav {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @include media(desktop) {
     margin-bottom: 0;
@@ -65,11 +75,11 @@
 }
 
 .footer-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
   font-size: 12px;
-  line-height: 1.33333;
-  color: #a6a6a6;
+  line-height: 1.66667;
+  color: #fff;
   transition: color 0.3s ease-in-out;
 
   &:hover,
@@ -77,19 +87,21 @@
   }
 
   @include media(desktop) {
-    font-size: 14px;
-    line-height: 1.42857;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
 .footer-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #a6a6a6;
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 2;
   text-align: center;
+  color: #fff;
 
   @include media(desktop) {
+    font-size: 12px;
+    line-height: 1.33333;
   }
 }

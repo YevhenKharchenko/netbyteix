@@ -1,13 +1,13 @@
 .context-menu {
   display: none;
-  box-shadow: 0 4px 4px rgba(254, 100, 1, 0.1);
-  background: #0e1013;
-  padding: 44px 40px;
+  background: linear-gradient(180deg, #005ddc 0%, #003276 100%);
+  border-radius: 0 0 40px 40px;
+  padding: 56px 60px;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  top: 53px;
+  top: 58px;
   left: 0;
   right: 0;
   transform: none;
@@ -22,12 +22,11 @@
 }
 
 .context-list-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.55556;
-  text-align: center;
-  color: #f2f2f2;
+  color: #69a9ff;
   position: relative;
 
   &::before {
@@ -40,11 +39,11 @@
     background: #fe6401;
     transform: translateY(-50%) scaleY(0);
     transform-origin: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
 
   &:active {
-    text-shadow: 0 0 0 currentColor;
+    color: #fff;
 
     &::before {
       transform: translateY(-50%) scaleY(1);
