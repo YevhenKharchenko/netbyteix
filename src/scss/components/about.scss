@@ -1,0 +1,75 @@
+.about-section {
+  @include media(desktop) {
+  }
+}
+
+.about-bg-wrapper {
+  padding-top: 122px;
+  padding-bottom: 362px;
+  background-image: url(../img/about/about-right-flower-mob.png),
+    url(../img/about/about-left-flower-mob.png),
+    url(../img/about/about-bg-mob.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top 16px right, bottom left, top 74px center;
+  background-size: auto, auto, auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 163px;
+    padding-bottom: 175px;
+    background-image: url(../img/about/about-right-flower-desk.png),
+      url(../img/about/about-left-flower-desk.png),
+      url(../img/about/about-bg-desk.png);
+    background-position: top 28px right, top 28px left, top 100px center;
+    max-width: 1440px;
+  }
+}
+
+.about-container {
+}
+
+.about-title {
+  color: #005fda;
+  max-width: 296px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(3px);
+
+  @include media(desktop) {
+    max-width: 774px;
+    margin-left: 0;
+    margin-right: 0;
+    transform: translateX(105px);
+  }
+}
+
+.about-text {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #003156;
+  max-width: 296px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(3px);
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.33333;
+    max-width: 662px;
+    margin: 0;
+    transform: translateX(105px);
+  }
+}
+
+.about-bottom-text {
+  margin-top: 28px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
