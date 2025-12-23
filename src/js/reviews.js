@@ -17,10 +17,10 @@ reviewsSwiper = new Swiper('.reviews-swiper-container', {
   spaceBetween: -100,
   speed: 500,
   allowTouchMove: true,
+  grabCursor: true,
   breakpoints: {
     1440: {
       initialSlide: 1,
-      allowTouchMove: false,
     },
   },
 
