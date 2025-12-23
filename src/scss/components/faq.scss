@@ -1,0 +1,148 @@
+.faq-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.faq-container {
+  @include media(desktop) {
+  }
+}
+
+.faq-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+.faq-text-wrapper {
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.faq-title {
+  @include media(desktop) {
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item {
+  background: #fff;
+  padding: 24px;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  max-width: 335px;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    max-width: 569px;
+  }
+}
+
+.faq-top-text-btn {
+  display: flex;
+  align-items: start;
+  width: 100%;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-btn-text {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #003156;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-toggle-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  height: 20px;
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-icon {
+  @include media(desktop) {
+  }
+}
+
+.faq-bottom-text {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4162b7;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.is-visible {
+  margin-top: 16px;
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(90deg);
+}
+
+.faq-list-item.faq-open {
+  background: #f3f7fb;
+}
+
+.faq-list-item.faq-open .faq-btn-text {
+  color: #4162b7;
+}
+
+.faq-list-item.faq-open .faq-icon {
+  fill: #4162b7;
+}
+
+.faq-img {
+  @include media(desktop) {
+    min-width: 647px;
+  }
+}
