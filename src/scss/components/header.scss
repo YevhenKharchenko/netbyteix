@@ -28,21 +28,13 @@
 }
 
 .nav-list {
-  @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-  }
-}
-
-.nav-list {
   display: none;
 
   @include media(desktop) {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 48px;
   }
 }
 
@@ -64,11 +56,13 @@
     &::before {
       content: '';
       position: absolute;
-      left: -5px;
+      left: -35px;
       top: 50%;
-      width: 2px;
+      width: 29px;
       height: 28px;
-      background: #fe6401;
+      background-image: url(../img/header/header-flower.png);
+      background-repeat: no-repeat;
+      background-size: contain;
       transform: translateY(-50%) scaleY(0);
       transform-origin: center;
       transition: transform 0.3s ease, color 0.3s ease;

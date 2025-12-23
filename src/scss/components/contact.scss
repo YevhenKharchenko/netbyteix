@@ -1,10 +1,25 @@
 .contact-section {
+  @include media(desktop) {
+  }
+}
+
+.contact-bg-wrapper {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 78px;
+  background-image: url(../img/contact/contact-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom 64px center;
+  background-size: auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 112px;
+    background-image: url(../img/contact/contact-bg-desk.png);
+    background-position: bottom 100px center;
+    max-width: 1440px;
   }
 }
 
@@ -13,89 +28,126 @@
   }
 }
 
-.contact-content-wrapper {
+.contact-title {
+  text-align: center;
+  margin-bottom: 281px;
+
   @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+    margin-bottom: 360px;
   }
 }
 
-.contact-top-wrapper {
-  margin-bottom: 32px;
+.contact-content-wrapper {
+  background: rgba(22, 99, 185, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 20px 12px;
+  max-width: 307px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    margin-bottom: 0;
-    max-width: 599px;
+    padding: 20px 40px;
+    max-width: 1101px;
+  }
+}
+
+.contact-update-wrapper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 36px;
+    width: 100%;
+    max-width: 591px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+  }
+}
+
+.contact-update-text {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+    min-width: 273px;
+  }
+}
+
+.contact-address-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.contact-text {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
 .contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
   @include media(desktop) {
   }
 }
 
 .contact-list-item {
-  background: rgba(17, 19, 23, 0.5);
-  border-bottom: 4px solid #393e46;
-  border-left: 2px solid #393e46;
-  border-right: 3px solid #393e46;
-  border-top: 2px solid #393e46;
-  border-radius: 4px;
-  padding: 24px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  width: 100%;
-
-  &:last-child {
-    background: rgba(33, 36, 44, 0.3);
-    border: 1px solid #393e46;
-
-    .contact-item-text {
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.5;
-      color: #a6a6a6;
-    }
-  }
+  align-items: center;
 
   @include media(desktop) {
   }
 }
 
 .contact-item-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #a6a6a6;
+  min-width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
+    min-width: 26px;
   }
 }
 
 .contact-item-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #f2f2f2;
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
 
   @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
-.contact-img {
-  margin-left: auto;
-  margin-right: auto;
+.contact-bottom-text {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
 
   @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.33333;
   }
 }

@@ -10,14 +10,14 @@
   background-position: top center, top center;
   background-size: auto, cover;
   padding-top: 140px;
-  padding-bottom: 415px;
+  padding-bottom: 383px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
     padding-top: 193px;
-    padding-bottom: 188px;
+    padding-bottom: 182px;
     background-image: url(../img/hero/hero-bg-desk.png),
       url(../img/hero/hero-retouch-desk.jpg);
     max-width: 1440px;

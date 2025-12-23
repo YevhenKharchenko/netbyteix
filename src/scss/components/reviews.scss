@@ -1,5 +1,43 @@
-.reviews-section {
+.reviews-faq-bg-wrapper {
+  position: relative;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(../img/reviews/reviews-bg-mob.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    filter: blur(8px);
+    mix-blend-mode: soft-light;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
   @include media(desktop) {
+    max-width: 1440px;
+
+    &::before {
+      background-image: url(../img/reviews/reviews-bg-desk.png);
+    }
+  }
+}
+
+.reviews-section {
+  scroll-margin-top: 76px;
+
+  @include media(desktop) {
+    scroll-margin-top: 96px;
   }
 }
 
